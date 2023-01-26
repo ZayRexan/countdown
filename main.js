@@ -1,4 +1,4 @@
-import moment from 'moment'
+import moment from 'moment';
 
 let date = document.querySelector('.countdown__date');
 let form = document.querySelector('.countdown');
@@ -40,18 +40,27 @@ function render() {
 	}
 	if (rest.years > 0) {
 		output.year.innerText = `${rest.years} лет`;
+		output.year.classList.add('visible');
+		console.log('1');
 	} else {
 		output.year.innerText = '';
+		output.year.classList.remove('visible');
 	}
 	if (rest.days > 0) {
 		output.day.innerText = `${rest.days} дней`;
+		output.day.classList.add('visible');
+		console.log('2');
 	} else {
 		output.day.innerText = '';
+		output.day.classList.remove('visible');
 	}
 	if (rest.hours > 0) {
 		output.hour.innerText = `${rest.hours} часов`;
+		output.hour.classList.add('visible');
+		console.log('3');
 	} else {
 		output.hour.innerText = '';
+		output.hour.classList.remove('visible');
 	}
 }
 

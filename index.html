@@ -5,16 +5,25 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Countdown</title>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<div class="countdown">
-			<form action="#" class="countdown__form">
-				<input class="countdown__date" type="date" />
-				<input class="countdown__button" type="submit" value="Отсчитать" />
-			</form>
-			<output class="countdown__output countdown__year"></output>
-			<output class="countdown__output countdown__month"></output>
-			<output class="countdown__output countdown__day"></output>
+			<div class="countdown__wrap">
+				<div class="countdown__outputs">
+					<output class="countdown__output countdown__year"></output>
+					<output class="countdown__output countdown__month"></output>
+					<output class="countdown__output countdown__day"></output>
+				</div>
+				<form action="#" class="countdown__form">
+					<input class="countdown__date" type="date" />
+					<input
+						class="countdown__button btn-reset"
+						type="submit"
+						value="Отсчитать"
+					/>
+				</form>
+			</div>
 		</div>
 		<script src="main.js" type="module"></script>
 	</body>
