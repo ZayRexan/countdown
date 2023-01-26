@@ -1,3 +1,5 @@
+import moment from 'moment'
+
 let date = document.querySelector('.countdown__date');
 let form = document.querySelector('.countdown');
 let output = {
@@ -23,10 +25,6 @@ function calculations() {
 		days: recived.diff(now, 'days'),
 		hours: recived.diff(now, 'hours'),
 	};
-
-	console.log(rest.years);
-	console.log(rest.days);
-	console.log(rest.hours);
 
 	if (rest.days >= 365) {
 		rest.days = Math.round(rest.days % 365);
