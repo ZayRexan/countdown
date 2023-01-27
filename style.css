@@ -42,6 +42,11 @@ body {
 	padding: 5px;
 	border: 2px solid black;
 	border-radius: 7px;
+	transition: background-color .2s;
+}
+
+.countdown__button:hover {
+	background-color: #fff;
 }
 
 .countdown__outputs {
