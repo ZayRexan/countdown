@@ -1,0 +1,22 @@
+{
+	"name": "countdown",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ZayRexan/countdown.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ZayRexan/countdown/issues"
+	},
+	"homepage": "https://github.com/ZayRexan/countdown#readme",
+	"devDependencies": {
+		"moment": "^2.29.4"
+	}
+}
