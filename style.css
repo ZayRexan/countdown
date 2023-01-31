@@ -1,0 +1,70 @@
+body {
+	background-color: #1960007d;
+}
+
+.btn-reset {
+	border: none;
+	padding: 0;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.countdown {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.countdown__wrap {
+	width: 200px;
+	position: relative;
+}
+
+.countdown__form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.countdown__date {
+	padding: 5px;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	border: 2px solid black;
+	border-radius: 7px;
+}
+
+.countdown__button {
+	padding: 5px;
+	border: 2px solid black;
+	border-radius: 7px;
+	transition: background-color .2s;
+}
+
+.countdown__button:hover {
+	background-color: #fff;
+}
+
+.countdown__outputs {
+	position: absolute;
+	top: -35px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	width: 100%;
+}
+
+.countdown__output {
+	display: none;
+}
+
+.visible {
+	display: inline-block;
+}
